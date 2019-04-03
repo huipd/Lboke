@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//用户添加
+Route::get('user/add','UserController@add');
+//执行添加
+Route::post('user/stort','UserController@stort');
